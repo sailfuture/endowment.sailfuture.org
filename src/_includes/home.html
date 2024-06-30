@@ -17,6 +17,8 @@
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link rel="stylesheet" href="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+
     
   </head>
   <body>
@@ -29,7 +31,7 @@
     
     {% include "./partials/scholarships/scholar-population.html" %}
 
-    {% include "./partials/scholarships/scholar-details.html" %}
+    {% include "./partials/scholarships/student-examples.html" %}
 
     {% include "./partials/scholarships/scholareconomics.html" %}
 
@@ -46,4 +48,19 @@
     {% endif %}
 
   </body>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('[data-fancybox]').fancybox({
+        youtube : {
+          controls : 1,
+          showinfo : 0
+        }
+      });
+    });
+  </script>
+
 </html>
