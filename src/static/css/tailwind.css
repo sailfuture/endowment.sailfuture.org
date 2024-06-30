@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Your Custom CSS Goes here*/
+
+/* Syntax Highlighting*/
+
+body :not(pre) > code[class*="language-"],
+body pre[class*="language-"] {
+  @apply text-neutral-600;
+  font-weight: 200;
+  font-stretch: 100%;
+
+}
